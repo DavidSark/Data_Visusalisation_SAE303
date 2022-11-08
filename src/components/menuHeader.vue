@@ -6,8 +6,7 @@ const menuVisible = ref(true);
 <template>
     <div>
         <!-- Menu responsive -->
-
-        <div class="overflow-y-hidden bg-black h-full w-screen fixed " :class="{ hidden: menuVisible }">
+        <div class="overflow-y-hidden bg-black h-full w-full fixed " :class="{ hidden: menuVisible }">
             <div class="flex justify-end mt-6">
                 <button v-if="!menuVisible" v-on:click="menuVisible = !menuVisible" class="mx-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class=" h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
@@ -58,7 +57,7 @@ const menuVisible = ref(true);
             <div class="hidden md:flex justify-between items-center pt-10">
                 <div class="">
                     <RouterLink to="/">
-                        <img class="w-20 lg:w-32" src="../assets/img/logo.svg" alt="logo du site" />
+                        <img class="w-20 lg:w-32" src="../assets/img/logo_2.svg" alt="logo du site" />
                     </RouterLink>
                 </div>
 
@@ -66,16 +65,16 @@ const menuVisible = ref(true);
                     <router-link class="" to="/barchart">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 1</p>
                     </router-link>
-                    <router-link class="text-black" to="/linechart">
+                    <router-link to="/linechart">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 2</p>
                     </router-link>
-                    <router-link class="text-black shrink-0" to="/verticalbarchart">
+                    <router-link class=" shrink-0" to="/verticalbarchart">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 3</p>
                     </router-link>
-                    <router-link class="text-black shrink-0" to="/doughtnutchart">
+                    <router-link class="shrink-0" to="/doughtnutchart">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 4</p>
                     </router-link>
-                    <router-link class="text-black" to="/map">
+                    <router-link to="/map">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Map</p>
                     </router-link>
                 </div>
@@ -97,14 +96,15 @@ const menuVisible = ref(true);
             </div>
 
         </div>
-        <div class="mt-6 md:mt-32 2xl:mt-48 flex text-center items-center justify-center ">
+        <div
+            class="mt-44 pb-80 md:pb-52 md:mt-20 lg:pb-40 2xl:mt-52 2xl:pb-96 flex text-center items-center justify-center ">
             <RouterLink to="/">
                 <p
                     class="text-5xl md:text-7xl 2xl:text-9xl tracking-widest text-white font-Montserrat font-bold inline">
                     DATAMA</p>
                 <p class="text-white md:text-2xl 2xl:text-3xl">Les données du cinéma </p>
                 <!-- <img class="" src="../assets/img/logo.svg" alt="logo du site" /> -->
-                <div class="w-12 h-1 rounded-full mx-auto mt-6 bg-white"></div>
+                <div class="w-12 h-1 rounded-full mx-auto my-6 bg-white"></div>
             </RouterLink>
         </div>
 

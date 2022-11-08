@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import MenuHeader from './components/menuHeader.vue';
 
+import MenuHeader from './components/menuHeader.vue';
 
 
 </script>
 
 <template>
   <div>
-    <div class="bg-black h-56 md:hidden">
+    <div class="bg-[url('assets/img/final.jpg')] bg-cover ">
       <MenuHeader class="md:hidden"></MenuHeader>
+      <MenuHeader class="hidden md:block"></MenuHeader>
     </div>
-    <img class="absolute -z-10 " src="../src/assets/img/cinema.jpg" alt="image d'une salle de cinema" />
-    <MenuHeader class="hidden md:block"></MenuHeader>
+    <!-- <img class=" md:hidden" src="./assets/img/accueil_00.jpg" alt="image d'une salle de cinema" /> -->
+    <!-- <img class="hidden md:block " src="./assets/img/accueil_01.jpg" alt="image d'une salle de cinema" /> -->
   </div>
   <RouterView />
 </template>

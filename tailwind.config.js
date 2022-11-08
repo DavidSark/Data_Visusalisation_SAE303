@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
-        'verde': '#398378'
+        'verde': '#398378',
+        'rojo': '#EF5881'
       },
       "fontFamily": {
         'Roboto': ['Roboto', 'sans-serif'],
@@ -19,7 +20,7 @@ module.exports = {
         'mid': '1440px',
       },
       backgroundImage: {
-        'accueil': ["url('../assets/img/img_accueil.jpg')"]
+        'accueil': ["url('../assets/img/final.jpg')"]
       },
     },
 
