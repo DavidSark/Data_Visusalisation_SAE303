@@ -1,8 +1,8 @@
 <script setup>
 import { reactive, ref, onMounted } from 'vue'
-// import { getDatas2 } from '../composables/serviceAjax'
-// import { getLabels, countDatas } from '../composables/utilsApp.js'
-// import { aleatoire, densite2 } from '../composables/commonChart.js'
+import { getCinema } from '../composables/service.js'
+import { getLabels, countDatas } from '../composables/utils.js'
+import { aleatoire, densite2 } from '../composables/common.js'
 import { PolarArea } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, RadialLinearScale } from 'chart.js'
 ChartJS.register(Title, Tooltip, Legend, ArcElement, RadialLinearScale)
@@ -55,13 +55,13 @@ const selectMode = () => {
 }
 
 const selectDatas = async () => {
-    await getDatas2()
+    await getCinema()
         .then(response => {
             listeDatas.value = response.records
             console.log("test", listeDatas)
             chartOptions.plugins.title.text = ""
-            chartData.labels = getLabels(listeDatas.value, 'fields.annee#1')
-            chartData.datasets[0].data = countDatas(listeDatas.value, chartData.labels, 'fields.annee#1')
+            chartData.labels = getLabels(listeDatas.value, 'fields.region_administrative#1')
+            chartData.datasets[0].data = countDatas(listeDatas.value, chartData.labels, 'fields.region_administrative#1')
             baseColor.value = 'rgba(0,0,255,#deg#)'
             selectMode()
         })

@@ -1,8 +1,6 @@
 <script setup>
 //import des éléments utiles de vue
 import { reactive, ref, onMounted } from 'vue';
-//import composable
-import { getSeances } from '../composables/services.js'
 // Import d'un graphique type doughnut
 import { Doughnut } from 'vue-chartjs'
 // import des objets du graphique de la bibliothèque ChartJS

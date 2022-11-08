@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 import MapView from './MapView.vue';
 import DoughnutChart from '../components/DoughnutChart.vue';
+import GraphFiltre from '../components/GraphFiltre.vue';
 // pour le menu -> 
 const menuVisible = ref(true);
 </script>
@@ -118,18 +119,15 @@ const menuVisible = ref(true);
         <!-- article 1  -->
 
         <div class="px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-20">
-            <h2 class="font-Montserrat text-xl lg:text-2xl xl:text-4xl leading-tight font-semibold">Lorem ipsum dolor
-                sit amet,
-                consectetur
-                adipiscing elit. Ut et finibus nisi. Curabitur nisl enim, accumsan ac nisi sit amet, ornare pulvinar
-                metus. Vivamus fringilla metus </h2>
+            <h2 class="font-Montserrat text-xl lg:text-2xl xl:text-4xl leading-tight font-semibold">Les films inédits et
+                les exclusivités sont des éléments importants pour un cinéma mais également pour un consommateur.
+            </h2>
 
 
             <div class="text-sm lg:text-xl leading-normal mt-10">
                 <p>
-                    Il ne faut pas oublier que même à vélo le pire peut arriver. Les cyclistes sont également
-                    des usagers de la route et ne font pas exception au Code de la route. Trop souvent
-                    ce détail est négligé et un accident est vite arrivé.
+                    Les cinémas capablent d'engendrer des exclusivités se verront avoir un flux constant
+                    de revenu car les consommateurs sauront où venir regarder tel ou tel film.
                 </p>
                 <DoughnutChart class="mt-4" />
                 <p class="text-xs">Source : <a
@@ -138,17 +136,18 @@ const menuVisible = ref(true);
                         data.culture.gouv.fr</a>
                 </p>
 
-                <p class="mt-10">Et pour cause, on recense un total de 63 387 accidents dans toute la France sur une
-                    période
-                    allant de <span class="font-bold">2005 à 2017</span> avec un pic d'accidents atteignant 5 399 pour
-                    l'année de
-                    2007. Mais ce qui est
-                    étonnant avec ces accidents, c'est que
-                    le plus grand
-                    nombre de
-                    ces accidents se produisent dans la Capitale : Paris.
-                </p>
+                <p class="mt-10">On se rend bien compte que les exclusivités sont très présentes dans quatre régions de
+                    France.
+                    L'Auvergne - Rhône-Alpes compte <span class="font-bold">23 486</span> films inédits pour l'année
+                    2020.
+                    L'Île-de-France, elle, en compte <span class="font-bold">22 403</span>, suivie de la nouvelle
+                    Aquitaine avec <span class="font-bold">20 552</span> films et enfin l'Occitanie avec <span
+                        class="font-bold">17 520</span>.
 
+                </p>
+                <p class="mt-10">Pour vous aider à trouver un cinéma près de chez vous avec ses films inédits,
+                    utilisez la carte ci-dessous ou le tableau pour filtrer les données:
+                </p>
                 <MapView class="mt-4" />
                 <p class="text-xs">Source : <a
                         href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
@@ -156,16 +155,9 @@ const menuVisible = ref(true);
                         data.culture.gouv.fr</a>
                 </p>
 
-                <p class="mt-10">Et pour cause, on recense un total de 63 387 accidents dans toute la France sur une
-                    période
-                    allant de <span class="font-bold">2005 à 2017</span> avec un pic d'accidents atteignant 5 399 pour
-                    l'année de
-                    2007. Mais ce qui est
-                    étonnant avec ces accidents, c'est que
-                    le plus grand
-                    nombre de
-                    ces accidents se produisent dans la Capitale : Paris.
-                </p>
+                <GraphFiltre></GraphFiltre>
+
+
             </div>
         </div>
         <div class="bg-gray-700 w-4/5 my-10 h-1 rounded-full mx-auto md:my-8"></div>

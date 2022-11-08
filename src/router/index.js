@@ -8,6 +8,7 @@ import DoughnutChartView from '../views/DoughnutChartView.vue'
 import CinemaCrise from '../views/Cinema&Crise.vue'
 import RegionsSeances from '../views/Regions&seances.vue'
 import FilmsInedits from '../views/FilmsInedits.vue'
+import GraphFiltre from '../views/GraphFiltreView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: '/cinema&crise', name: 'CinemaCrise', component: CinemaCrise },
     { path: '/regions&seances', name: 'RegionsSeances', component: RegionsSeances },
     { path: '/filmsinedits', name: 'FilmsInedits', component: FilmsInedits },
+    { path: '/graphfiltre', name: 'GraphFiltre', component: GraphFiltre },
   ]
 })
 

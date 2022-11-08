@@ -1,8 +1,7 @@
 <script setup >
 import { ref } from 'vue'
-
 import VerticalBarChart from '../components/VerticalBarChart.vue';
-import RadarChart from '../components/RadarChart.vue';
+import AreaChart from '../components/AreaChart.vue';
 // pour le menu -> 
 const menuVisible = ref(true);
 </script>
@@ -125,7 +124,8 @@ const menuVisible = ref(true);
 
             <div class="text-sm lg:text-xl leading-normal mt-10">
                 <p>
-                    On retrouve ici les régions qui ont les cinémas qui proposent le plus de séances
+                    Sur la période de 2020, on retrouve les régions qui ont les cinémas qui ont proposaient le plus de
+                    séances au cours de l'année.
                 </p>
                 <VerticalBarChart class="mt-4" />
                 <p class="text-xs">Source : <a
@@ -133,16 +133,20 @@ const menuVisible = ref(true);
                         target="_blank">
                         data.culture.gouv.fr</a>
                 </p>
-                <RadarChart class="mt-4"></RadarChart>
-                <p class="mt-10">Et pour cause, on recense un total de 63 387 accidents dans toute la France sur une
-                    période
-                    allant de <span class="font-bold">2005 à 2017</span> avec un pic d'accidents atteignant 5 399 pour
-                    l'année de
-                    2007. Mais ce qui est
-                    étonnant avec ces accidents, c'est que
-                    le plus grand
-                    nombre de
-                    ces accidents se produisent dans la Capitale : Paris.
+                <p class="mt-10">
+                    L'Île-de-France est la région qui a proposé le plus de séances de cinéma dans toute la France. Il
+                    est intéressant de noter que la région d'Auvergne - Rhône-Alpes est en deuxième position. Ce qui
+                    peut paraître surprenant car elle possède le plus de cinéma en France.
+                </p>
+                <AreaChart class="mt-4"></AreaChart>
+                <p class="text-xs">Source : <a
+                        href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
+                        target="_blank">
+                        data.culture.gouv.fr</a>
+                </p>
+                <p class="mt-10">
+                    En effet la région Auvergne - Rhône-Alpes possède 323 cinémas tandis que l'Île-de-France en dispose
+                    de 310.
                 </p>
 
             </div>
