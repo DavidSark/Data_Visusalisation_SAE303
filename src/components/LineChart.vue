@@ -41,7 +41,7 @@ let chartData = reactive({
             //etiquette du jeu de données à projeter
             label: '2019',
             //valeurs des données (statiques pour pour l'exemple)
-            data: [40, 20, 12, 14, 24],
+            data: [],
             borderColor: 'rgba(255,0,0,0.5)',
             tension: 0.5,
             fill: true,
@@ -57,7 +57,7 @@ let chartData = reactive({
             //etiquette du jeu de données à projeter
             label: '2020',
             //valeurs des données (statiques pour pour l'exemple)
-            data: [40, 20, 12, 14, 24],
+            data: [],
             borderColor: 'rgba(0,0,255,0.5)',
             tension: 0.5,
             fill: true,

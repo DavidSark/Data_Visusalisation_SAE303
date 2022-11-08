@@ -24,22 +24,22 @@ const menuVisible = ref(true);
                 </li>
                 <li class="mb-7">
                     <router-link class="text-white no-underline hover:text-jaune-0" to="/barchart">
-                        <p class="">Graph 1</p>
+                        <p class="">Bar Hori</p>
                     </router-link>
                 </li>
                 <li class="mb-7">
                     <router-link class="text-white  no-underline hover:text-jaune-0" to="/linechart">
-                        <p class="">Graph 2</p>
+                        <p class="">Line</p>
                     </router-link>
                 </li>
                 <li class="mb-7">
                     <router-link class=" text-white no-underline hover:text-jaune-0" to="/verticalbarchart">
-                        <p class="">Graph 3</p>
+                        <p class="">Bar</p>
                     </router-link>
                 </li>
                 <li class="mb-7">
                     <router-link class="text-white no-underline hover:text-jaune-0" to="/doughnutchart">
-                        <p class="">Graph 4</p>
+                        <p class="">Pie</p>
                     </router-link>
                 </li>
 
@@ -63,16 +63,16 @@ const menuVisible = ref(true);
 
                 <div class=" hidden md:flex items-center space-x-6 font-Montserrat text-xl lg:text-2xl">
                     <router-link class="" to="/barchart">
-                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 1</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Bar Hori</p>
                     </router-link>
                     <router-link to="/linechart">
-                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 2</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Line</p>
                     </router-link>
                     <router-link class=" shrink-0" to="/verticalbarchart">
-                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 3</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Bar</p>
                     </router-link>
-                    <router-link class="shrink-0" to="/doughtnutchart">
-                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 4</p>
+                    <router-link class="shrink-0" to="/doughnutchart">
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Pie</p>
                     </router-link>
                     <router-link to="/map">
                         <p class="text-white hover:border-b hover:border-verde font-semibold">Map</p>
