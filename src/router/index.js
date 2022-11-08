@@ -5,7 +5,9 @@ import BarchartView from '../views/BarChartView.vue'
 import LineChartView from '../views/LineChartView.vue'
 import VerticalBarChartView from '../views/VerticalBarChartView.vue'
 import DoughnutChartView from '../views/DoughnutChartView.vue'
-import Article1View from '../views/Article1View.vue'
+import CinemaCrise from '../views/Cinema&Crise.vue'
+import RegionsSeances from '../views/Regions&seances.vue'
+import FilmsInedits from '../views/FilmsInedits.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -15,7 +17,9 @@ const router = createRouter({
     { path: '/linechart', name: 'LineChartView', component: LineChartView },
     { path: '/verticalbarchart', name: 'VerticalBarChartView', component: VerticalBarChartView },
     { path: '/doughnutchart', name: 'DoughnutChartView', component: DoughnutChartView },
-    { path: '/article1', name: 'Article1View', component: Article1View },
+    { path: '/cinema&crise', name: 'CinemaCrise', component: CinemaCrise },
+    { path: '/regions&seances', name: 'RegionsSeances', component: RegionsSeances },
+    { path: '/filmsinedits', name: 'FilmsInedits', component: FilmsInedits },
   ]
 })
 

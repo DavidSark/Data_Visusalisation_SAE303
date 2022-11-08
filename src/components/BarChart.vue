@@ -31,7 +31,7 @@ let chartData = reactive({
     //valeurs des données du graphique
     datasets: [{
         //Etiquette du jeu de donnée à projeter
-        label: 'Entrées totales en 2020',
+        label: 'Entrées totales en 2019',
         //valeurs des données
         data: [],
         //couleurs des bars en regard des valeurs
@@ -71,7 +71,7 @@ let chartOptions = reactive({
             suggestedMax: 100,
             ticks: {
                 font: {
-                    size: 16
+                    size: 10
                 }
             }
         },
@@ -79,7 +79,7 @@ let chartOptions = reactive({
         x: {
             ticks: {
                 font: {
-                    size: 16
+                    size: 10
                 }
             }
         }
@@ -92,7 +92,7 @@ let chartOptions = reactive({
             //affiche titre
             display: true,
             //libellé du graphique 
-            text: "Nombre d’entrées dans les cinémas actifs en 2020 - ",
+            text: "Nombre d’entrées dans les cinémas actifs en 2019 - ",
             //couleur du text
             color: "black",
             font: {
@@ -117,7 +117,7 @@ onMounted(async () => {
             //on vérifie dans la console l'obtention des résultats
             console.log("reponse ", liste.value);
             //récupération du nombres de valeurs retournées
-            chartOptions.plugins.title.text += liste.value[0].nhits + " réponse"
+            chartOptions.plugins.title.text += liste.value[0].nhits + " réponses"
             //chargement des labels (axe des ordonnées)
             //création d'un set pour valeurs uniques
             let setLabels = new Set()
@@ -144,7 +144,7 @@ onMounted(async () => {
                     //si c'est le bon label
                     if (label == el.fields.region_administrative) {
                         //comptage des valeurs
-                        nbm += el.fields.entrees_2020
+                        nbm += el.fields.entrees_2019
                     }
                 })
                 cptm.push(nbm)

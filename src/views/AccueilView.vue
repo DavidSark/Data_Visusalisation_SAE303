@@ -23,7 +23,7 @@ import MenuHeader from '../components/menuHeader.vue';
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           <!--Card 1-->
           <div class="rounded overflow-hidden shadow-lg">
-            <RouterLink to="/article1">
+            <RouterLink to="/cinema&crise">
               <img class="w-full" src="../assets/img/img_card_00.jpg" alt="image d'un cinema">
               <div class="px-6 py-4">
                 <p class="text-gray-700 text-base font-Montserrat">
@@ -43,7 +43,7 @@ import MenuHeader from '../components/menuHeader.vue';
           </div>
           <!--Card 2-->
           <div class="rounded overflow-hidden shadow-lg">
-            <RouterLink to="/article2">
+            <RouterLink to="/regions&seances">
               <img class="w-full" src="../assets/img/img_card_01.jpg" alt="River">
               <div class="px-6 py-4">
                 <p class="text-gray-700 text-base">
@@ -63,11 +63,11 @@ import MenuHeader from '../components/menuHeader.vue';
 
           <!--Card 3-->
           <div class="rounded overflow-hidden shadow-lg">
-            <RouterLink to="/article3">
+            <RouterLink to="/filmsinedits">
               <img class="w-full" src="../assets/img/img_card_02.jpg" alt="Forest">
             </RouterLink>
 
-            <RouterLink to="/article3">
+            <RouterLink to="/filmsinedits">
               <div class="px-6 py-4">
                 <p class="text-gray-700 text-base">
                   L'exclusivité est un point important dans le cinéma!
@@ -84,12 +84,9 @@ import MenuHeader from '../components/menuHeader.vue';
               </div>
             </RouterLink>
           </div>
-
-
         </div>
 
-
-        <div class="bg-gray-300">
+        <div class="bg-white">
           <div class="md:flex md:justify-between md:items-center">
             <div class="pt-12 md:pt-0 bg-gray-300 md:w-1/2 md:bg-white md:pb-0">
               <img src="../assets/img/img_card_00.jpg" />

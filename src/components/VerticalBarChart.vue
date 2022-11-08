@@ -80,7 +80,7 @@ let chartOptions = reactive({
         x: {
             ticks: {
                 font: {
-                    size: 16
+                    size: 10
                 }
             }
         }
@@ -93,7 +93,7 @@ let chartOptions = reactive({
             labels: {
                 color: '',
                 font: {
-                    size: 16
+                    size: 10
                 }
             }
         },

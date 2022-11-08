@@ -83,14 +83,33 @@ let chartOptions = reactive({
             //affichage
             display: true,
             //libellé du graphique 
-            text: 'Comparatif des entrées totales de chaques régions entre 2019 & 2020',
+            text: 'Comparatif des entrées totales de chaques régions entre 2019 & 2020 - ',
             color: "black",
             //police de test
             font: {
                 size: 16
             }
         }
-    }
+    },
+
+    scales: {
+        //axe des ordonnées 
+        y: {
+            ticks: {
+                font: {
+                    size: 10
+                }
+            }
+        },
+        //axe des abscisses
+        x: {
+            ticks: {
+                font: {
+                    size: 10
+                }
+            }
+        }
+    },
 })
 
 //montage du composant chargement des données 
@@ -111,7 +130,7 @@ onMounted(async () => {
             //on vérifie dans la console l'obtention des résultats
             console.log("reponse ", liste.value);
             //récupération du nombres de valeurs retournées
-            chartOptions.plugins.title.text += liste.value[0].nhits + " réponse"
+            chartOptions.plugins.title.text += liste.value[0].nhits + " réponses"
             //chargement des labels (axe des ordonnées)
             //création d'un set pour valeurs uniques
             let setLabels = new Set()
@@ -161,7 +180,7 @@ onMounted(async () => {
 
 <template>
     <main>
-        <h1>Graphique Line</h1>
+
         <Line :chart-options="chartOptions" :chart-data="chartData" :chart-id="chartId" :dataset-id-key="datasetIdKey"
             :plugins="plugins" :css-classes="cssClasses" :styles="styles" :width="width" :height="height">
 
