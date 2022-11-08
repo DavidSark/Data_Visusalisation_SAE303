@@ -30,32 +30,20 @@ const menuVisible = ref(true);
                         </router-link>
                     </li>
                     <li class="mb-7">
-                        <router-link class="text-white no-underline hover:text-jaune-0" to="/barchart">
-                            <p class="">Bar Hori</p>
+                        <router-link class="text-white no-underline hover:text-jaune-0" to="/cinema&crise">
+                            <p class="">Cinema & crise</p>
                         </router-link>
                     </li>
                     <li class="mb-7">
-                        <router-link class="text-white  no-underline hover:text-jaune-0" to="/linechart">
-                            <p class="">Line</p>
+                        <router-link class="text-white  no-underline hover:text-jaune-0" to="/regions&seances">
+                            <p class="">Régions et séance de cinéma</p>
                         </router-link>
                     </li>
                     <li class="mb-7">
-                        <router-link class=" text-white no-underline hover:text-jaune-0" to="/verticalbarchart">
-                            <p class="">Bar</p>
+                        <router-link class=" text-white no-underline hover:text-jaune-0" to="/filmsinedits">
+                            <p class="">Films Inédits</p>
                         </router-link>
                     </li>
-                    <li class="mb-7">
-                        <router-link class="text-white no-underline hover:text-jaune-0" to="/doughnutchart">
-                            <p class="">Pie</p>
-                        </router-link>
-                    </li>
-
-                    <li class="mb-7">
-                        <router-link class="text-white no-underline hover:text-jaune-0" to="/map">
-                            <p class="">Map</p>
-                        </router-link>
-                    </li>
-
                 </ul>
             </div>
 
@@ -69,20 +57,15 @@ const menuVisible = ref(true);
                     </div>
 
                     <div class=" hidden md:flex items-center space-x-6 font-Montserrat text-xl lg:text-2xl">
-                        <router-link class="" to="/barchart">
-                            <p class="text-white hover:border-b hover:border-verde font-semibold">Bar Hori</p>
+                        <router-link class="" to="/cinema&crise">
+                            <p class="text-white hover:border-b hover:border-verde font-semibold">Cinema & crise</p>
                         </router-link>
-                        <router-link to="/linechart">
-                            <p class="text-white hover:border-b hover:border-verde font-semibold">Line</p>
+                        <router-link to="/regions&seances">
+                            <p class="text-white hover:border-b hover:border-verde font-semibold">Régions et séance de
+                                cinéma</p>
                         </router-link>
-                        <router-link class=" shrink-0" to="/verticalbarchart">
-                            <p class="text-white hover:border-b hover:border-verde font-semibold">Bar</p>
-                        </router-link>
-                        <router-link class="shrink-0" to="/doughnutchart">
-                            <p class="text-white hover:border-b hover:border-verde font-semibold">Pie</p>
-                        </router-link>
-                        <router-link to="/map">
-                            <p class="text-white hover:border-b hover:border-verde font-semibold">Map</p>
+                        <router-link class=" shrink-0" to="/filmsinedits">
+                            <p class="text-white hover:border-b hover:border-verde font-semibold">Films inédits</p>
                         </router-link>
                     </div>
                 </div>
