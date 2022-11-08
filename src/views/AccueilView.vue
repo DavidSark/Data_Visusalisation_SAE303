@@ -15,7 +15,8 @@
 
         <div class="text-center font-medium text-lg font-Montserrat py-12">
           <div class="w-6 h-1 rounded-full mx-auto mb-4  bg-gray-700"></div>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.</p>
+          <p class="text-gray-700 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus
+            lacus.</p>
         </div>
       </div>
 
@@ -25,7 +26,8 @@
 
         <div class="text-center font-medium text-lg font-Montserrat py-12">
           <div class="w-6 h-1 rounded-full mx-auto mb-4 text-gray-700 bg-gray-700"></div>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.</p>
+          <p class="text-gray-700 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus
+            lacus.</p>
         </div>
       </div>
 
@@ -35,7 +37,8 @@
 
         <div class="text-center font-medium text-lg font-Montserrat py-12">
           <div class="w-6 h-1 rounded-full mx-auto mb-4 text-gray-700 bg-gray-700"></div>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.</p>
+          <p class="text-gray-700 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus
+            lacus.</p>
         </div>
       </div>
     </div>
@@ -44,8 +47,13 @@
       <div class="pt-12 bg-gray-300">
         <img src="../assets/img/img_card_00.jpg" />
       </div>
-      <p class="text-center font-medium text-2xl text-gray-700 font-Montserrat py-12">À propos</p>
-      <div class="w-6 h-1 rounded-full mx-auto mb-4 bg-gray-700"></div>
+      <p class="text-center font-medium text-2xl text-gray-700 font-Montserrat pt-12 ">À propos</p>
+      <div class="w-6 h-1 rounded-full mx-auto my-4 bg-gray-700"></div>
+      <div class="mx-3">
+        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Ut sodales tempus lacus.</p>
+      </div>
     </div>
 
 
