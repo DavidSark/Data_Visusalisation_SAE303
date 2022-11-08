@@ -7,8 +7,8 @@ const menuVisible = ref(true);
     <div>
         <!-- Menu responsive -->
 
-        <div class="overflow-y-hidden bg-verde h-full w-screen fixed " :class="{ hidden: menuVisible }">
-            <div class="flex justify-end mt-4">
+        <div class="overflow-y-hidden bg-black h-full w-screen fixed " :class="{ hidden: menuVisible }">
+            <div class="flex justify-end mt-6">
                 <button v-if="!menuVisible" v-on:click="menuVisible = !menuVisible" class="mx-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class=" h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -34,13 +34,16 @@ const menuVisible = ref(true);
                     </router-link>
                 </li>
                 <li class="mb-7">
-                    <router-link class="text-white no-underline hover:text-jaune-0" to="/verticalbarchart">
+                    <router-link class=" text-white no-underline hover:text-jaune-0" to="/verticalbarchart">
                         <p class="">Graph 3</p>
                     </router-link>
                 </li>
-                <router-link class="text-black shrink-0" to="/doughtnutchart">
-                    <p class="text-verde hover:border-b hover:border-verde font-semibold">Graph 4</p>
-                </router-link>
+                <li class="mb-7">
+                    <router-link class="text-white no-underline hover:text-jaune-0" to="/doughnutchart">
+                        <p class="">Graph 4</p>
+                    </router-link>
+                </li>
+
                 <li class="mb-7">
                     <router-link class="text-white no-underline hover:text-jaune-0" to="/map">
                         <p class="">Map</p>
@@ -52,51 +55,58 @@ const menuVisible = ref(true);
 
         <!-- Menu desktop -->
         <div class="mx-10 ">
-            <div class="hidden lg:flex justify-between mt-12  ">
-                <div class="flex items-center ">
-                    <RouterLink class=" font-yeseva text-5xl text-black " to="/">
-                        <img class="w-32" src="../assets/img/logo.svg" alt="logo du site" />
+            <div class="hidden md:flex justify-between items-center pt-10">
+                <div class="">
+                    <RouterLink to="/">
+                        <img class="w-20 lg:w-32" src="../assets/img/logo.svg" alt="logo du site" />
                     </RouterLink>
                 </div>
 
-                <div class=" hidden lg:flex items-center space-x-6 font-Montserrat text-2xl">
+                <div class=" hidden md:flex items-center space-x-6 font-Montserrat text-xl lg:text-2xl">
                     <router-link class="" to="/barchart">
-                        <p class="text-verde hover:border-b hover:border-verde font-semibold">Graph 1</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 1</p>
                     </router-link>
                     <router-link class="text-black" to="/linechart">
-                        <p class="text-verde hover:border-b hover:border-verde font-semibold">Graph 2</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 2</p>
                     </router-link>
                     <router-link class="text-black shrink-0" to="/verticalbarchart">
-                        <p class="text-verde hover:border-b hover:border-verde font-semibold">Graph 3</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 3</p>
                     </router-link>
                     <router-link class="text-black shrink-0" to="/doughtnutchart">
-                        <p class="text-verde hover:border-b hover:border-verde font-semibold">Graph 4</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Graph 4</p>
                     </router-link>
                     <router-link class="text-black" to="/map">
-                        <p class="text-verde hover:border-b hover:border-verde font-semibold">Map</p>
+                        <p class="text-white hover:border-b hover:border-verde font-semibold">Map</p>
                     </router-link>
                 </div>
             </div>
         </div>
 
-        <div class="lg:hidden mb-12">
+        <div class="md:hidden">
             <div class="flex items-center justify-between">
-                <div class="mx-4 mt-4">
-                    <RouterLink class=" font-yeseva text-5xl text-black " to="/">
-                        <img src="../assets/img/logo.svg" alt="logo du site" />
-                    </RouterLink>
-                </div>
-                <button v-on:click="menuVisible = !menuVisible" class="mx-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-verde" viewBox="0 0 20 20"
+                <div></div>
+                <button v-on:click="menuVisible = !menuVisible" class="mx-4 mt-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20"
                         fill="currentColor" :class="{ hidden: !menuVisible }">
                         <path fill-rule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                             clip-rule="evenodd" />
                     </svg>
                 </button>
-            </div>
-        </div>
 
+            </div>
+
+        </div>
+        <div class="mt-6 md:mt-32 2xl:mt-48 flex text-center items-center justify-center ">
+            <RouterLink to="/">
+                <p
+                    class="text-5xl md:text-7xl 2xl:text-9xl tracking-widest text-white font-Montserrat font-bold inline">
+                    DATAMA</p>
+                <p class="text-white md:text-2xl 2xl:text-3xl">Les données du cinéma </p>
+                <!-- <img class="" src="../assets/img/logo.svg" alt="logo du site" /> -->
+                <div class="w-12 h-1 rounded-full mx-auto mt-6 bg-white"></div>
+            </RouterLink>
+        </div>
 
 
     </div>

@@ -15,8 +15,8 @@ module.exports = {
       fontSize: {
         'test': 'calc(32.57143px + 1.07143vw)'
       },
-      "screens": {
-        "big": '1700px'
+      screens: {
+        'mid': '1440px',
       },
       backgroundImage: {
         'accueil': ["url('../assets/img/img_accueil.jpg')"]

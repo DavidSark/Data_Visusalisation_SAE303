@@ -5,8 +5,17 @@
 
 <template>
   <div>
+    <div>
+      <p class="z-10">zizi</p>
+    </div>
 
-    <div class="bg-bg">
+
+
+
+
+
+
+    <!-- <div class="bg-bg">
       <div class="flex mx-auto ">
         <div class="flex justify-between flex-col w-1/2 px-8 py-16">
           <h1 class="font-Roboto text-5xl leading-tight font-bold">Lorem ipsum dolor sit amet, consectetur
@@ -26,7 +35,7 @@
           </figure>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
