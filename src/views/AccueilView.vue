@@ -87,27 +87,27 @@ import MenuHeader from '../components/menuHeader.vue';
         </div>
 
         <div class="bg-white">
-          <div class="md:flex md:justify-between md:items-center">
-            <div class="pt-12 md:pt-0 bg-gray-300 md:w-1/2 md:bg-white md:pb-0">
-              <img src="../assets/img/img_card_00.jpg" />
-            </div>
 
-            <div class="mx-3 md:w-1/2  ">
-              <p class="text-center font-medium text-2xl text-gray-700 font-Montserrat pt-12 md:pt-0 lg:text-4xl">À
-                propos
+          <div class="text-sm lg:text-xl leading-normal mt-10 lg:mt-0">
+
+            <div class=" px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-10">
+              <p class=" pt-5 text-center font-Montserrat font-bold text-lg md:text-2xl">Pourquoi des graphiques ?</p>
+              <div class="w-12 h-1 rounded-full mx-auto my-6 bg-gray-700"></div>
+              <p class=" py-3 md:mt-0 font-Montserrat">Lorsque l'on parle d'analyse de données, il est important
+                d'utiliser des
+                graphiques pour se rendre
+                compte
+                efficacement de ce que les données que l'ont analysé ont à nous montrer.
+                <br />
+                Grâce à cette analyse de données, il est possible de se rendre compte de plusieurs choses
+                comme de prévoir un potentiel futur et ainsi s'adapter en conséquence ou encore de comprendre
+                l'évolution de certaines thématiques à travers le temps.
               </p>
-              <div class="w-6 h-1 rounded-full mx-auto my-4 bg-gray-700"></div>
-              <p class="text-gray-700 lg:text-2xl mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                sodales
-                tempus
-                lacus.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tempus lacus.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Ut sodales tempus lacus.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-gray-700 w-4/5 h-1 rounded-full mx-auto md:my-8"></div>
+      <div class="bg-gray-700 w-4/5 h-1 rounded-full mx-auto mt-8"></div>
       <div class="bg-gray-300">
         <div class="mx-3 pb-3 pt-4  lg:flex lg:justify-evenly">
           <div class="flex flex-col lg:flex-row lg:space-x-11 lg:text-2xl">

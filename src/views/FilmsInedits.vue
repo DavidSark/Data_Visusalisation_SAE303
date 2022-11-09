@@ -137,10 +137,7 @@ const menuVisible = ref(true);
                         target="_blank">
                         data.culture.gouv.fr</a>
                 </p>
-
                 <GraphFiltre></GraphFiltre>
-
-
             </div>
         </div>
         <div class="bg-gray-700 w-4/5 my-10 h-1 rounded-full mx-auto md:my-8"></div>

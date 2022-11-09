@@ -59,7 +59,6 @@ let chartOptions = reactive({
     //Aspect responsive du graphique
     responsive: true,
     //maintien du ratio
-    maintainAspectRation: false,
 
     //Types de projection utilisée
     indexAxis: "y",
@@ -68,10 +67,9 @@ let chartOptions = reactive({
         //axe des ordonnées 
         y: {
             //valeur max des y
-            suggestedMax: 100,
             ticks: {
                 font: {
-                    size: 10
+                    size: 8
                 }
             }
         },
@@ -79,7 +77,7 @@ let chartOptions = reactive({
         x: {
             ticks: {
                 font: {
-                    size: 10
+                    size: 8
                 }
             }
         }
@@ -87,7 +85,10 @@ let chartOptions = reactive({
 
     //Plugins 
     plugins: {
-
+        legend: {
+            labels: {
+            }
+        },
         title: {
             //affiche titre
             display: true,

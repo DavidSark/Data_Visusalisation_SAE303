@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import BarChart from '../components/BarChart.vue';
 import LineChart from '../components/LineChart.vue';
+import VerticalBarChartVue from '../components/VerticalBarChart.vue';
 
 // pour le menu -> 
 const menuVisible = ref(true);
@@ -125,26 +126,42 @@ const menuVisible = ref(true);
                 <p>
                     On distingue bien l'impact qu'a le cinéma dans un pays comme la France.
                 </p>
-                <BarChart class="mt-4" />
-                <p class="text-xs">Source : <a
-                        href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
-                        target="_blank">
-                        data.culture.gouv.fr</a>
-                </p>
+            </div>
+        </div>
 
-                <p class="mt-10">Cela dit, le cinéma et le monde audiovisuel ne sont pas à l'abri de tous dangers.
+        <div class="flex items-center  px-2 xl:px-44">
+            <BarChart class="px-2 md:px-20 lg:px-20 h-full w-full" />
+        </div>
+        <p class="text-xs px-2 xl:px-44">Source : <a
+                href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
+                target="_blank">
+                data.culture.gouv.fr</a>
+        </p>
+        <div class="px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-0 lg:mb-5">
+            <div class="text-sm lg:text-xl leading-normal mt-10">
+
+                <p class="mt-10 md:mt-0">Cela dit, le cinéma et le monde audiovisuel ne sont pas à l'abri de tous
+                    dangers.
                     Et pour cause, pour l'année suivante, donc 2020, les entrées ont énormément chuté.
                 </p>
+            </div>
+        </div>
 
-                <LineChart class="mt-4" />
-                <p class="text-xs">Source : <a
-                        href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
-                        target="_blank">
-                        data.culture.gouv.fr</a>
-                </p>
+        <div class="flex items-center px-2 xl:px-44">
+            <LineChart class=" md:px-20 lg:px-20 h-full w-full" />
+        </div>
+        <p class="text-xs px-2 xl:px-44">Source : <a
+                href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
+                target="_blank">
+                data.culture.gouv.fr</a>
+        </p>
 
-                <p class="mt-10">Et on se rend très vite compte de la différence entre ces deux années.
-                    La région d'Île de France, qui était à plus de <span class="font-bold">43 millions</span> d'entrées
+        <div class="text-sm lg:text-xl leading-normal mt-10 lg:mt-0">
+
+            <div class=" px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-10">
+                <p class="mt-10 md:mt-0">Et on se rend très vite compte de la différence entre ces deux années.
+                    La région d'Île de France, qui était à plus de <span class="font-bold">43 millions</span>
+                    d'entrées
                     pour 2019,
                     passe à moins de <span class="font-bold">20 millions</span> pour l'année de 2020.
                     Cela n'est pas un hasard puisque cette baisse conséquente est due à la pandémie qui
@@ -153,6 +170,19 @@ const menuVisible = ref(true);
                 </p>
             </div>
         </div>
+
+        <div class="text-sm lg:text-xl leading-normal mt-10 lg:mt-0">
+            <div class=" px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-10">
+                <p class="text-2xl font-semibold mb-2">Explication du graphique :</p>
+                <p class="mt-10 md:mt-0">
+                    Ici, le graphique en ligne permet de bien distinguer l'évolution des entrées entre les régions en
+                    fonction des années. En effet on voit bien les entrées de chaque région pour une année donnée. De ce
+                    fait il est facile de comprendre dès le premier coup d'oeil que l'on cherche à comparer des données
+                    et se rendre compte de l'écart des données.
+                </p>
+            </div>
+        </div>
+
         <div class="bg-gray-700 w-4/5 my-10 h-1 rounded-full mx-auto md:my-8"></div>
         <div class="bg-gray-300">
             <div class="mx-3 pb-3 pt-4  lg:flex lg:justify-evenly">
@@ -170,7 +200,8 @@ const menuVisible = ref(true);
                         <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Pie</p>
                     </router-link>
                     <router-link to="/map">
-                        <p class="text-gray-700 hover:border-b inline-block hover:border-verde font-semibold">Map</p>
+                        <p class="text-gray-700 hover:border-b inline-block hover:border-verde font-semibold">Map
+                        </p>
                     </router-link>
                 </div>
 

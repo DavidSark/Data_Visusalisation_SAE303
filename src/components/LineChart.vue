@@ -97,7 +97,7 @@ let chartOptions = reactive({
         y: {
             ticks: {
                 font: {
-                    size: 10
+                    size: 8
                 }
             }
         },
@@ -105,7 +105,7 @@ let chartOptions = reactive({
         x: {
             ticks: {
                 font: {
-                    size: 10
+                    size: 8
                 }
             }
         }

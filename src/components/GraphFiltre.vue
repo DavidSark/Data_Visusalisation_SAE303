@@ -55,8 +55,6 @@ baseColor.value = 'rgba(0,0,255,#deg#)'
 let fields = ref()
 fields.value = [
     { key: 'fields.nom', label: "Nom du cinéma", type: "string", sortable: true, sort: 1, filter: "" },
-    { key: 'fields.dep', label: "Département", type: "string", sortable: true, sort: 1, filter: "" },
-    { key: 'fields.commune', label: "Commune", type: "string", sortable: true, sort: 1, filter: "" },
 ]
 console.log("resultat", fields.value)
 

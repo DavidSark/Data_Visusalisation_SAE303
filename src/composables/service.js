@@ -7,5 +7,3 @@ export const getCinema = () => {
         })
         .catch(error => { throw error })
 }
-
-

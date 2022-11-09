@@ -105,33 +105,44 @@ const menuVisible = ref(true);
             </h2>
 
 
-            <div class="text-sm lg:text-xl leading-normal mt-10">
+            <div class="text-sm lg:text-xl leading-normal mt-10 mb-5">
                 <p>
                     Sur la période de 2020, on retrouve les régions qui ont les cinémas qui ont proposaient le plus de
                     séances au cours de l'année.
                 </p>
-                <VerticalBarChart class="mt-4" />
-                <p class="text-xs">Source : <a
-                        href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
-                        target="_blank">
-                        data.culture.gouv.fr</a>
-                </p>
+            </div>
+        </div>
+        <div class="flex items-center px-2 xl:px-44">
+            <VerticalBarChart class="px-2 md:px-20 lg:px-20 h-full w-full" />
+        </div>
+        <p class="text-xs p-2  px-2 xl:px-44">Source : <a
+                href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
+                target="_blank">
+                data.culture.gouv.fr</a>
+        </p>
+        <div class="px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-0">
+            <div class="text-sm lg:text-xl leading-normal ">
                 <p class="mt-10">
                     L'Île-de-France est la région qui a proposé le plus de séances de cinéma dans toute la France. Il
                     est intéressant de noter que la région d'Auvergne - Rhône-Alpes est en deuxième position. Ce qui
                     peut paraître surprenant car elle possède le plus de cinéma en France.
                 </p>
-                <AreaChart class="mt-4"></AreaChart>
-                <p class="text-xs">Source : <a
-                        href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
-                        target="_blank">
-                        data.culture.gouv.fr</a>
-                </p>
-                <p class="mt-10">
+            </div>
+        </div>
+        <div class=" px-2 xl:px-44">
+            <AreaChart class="mt-4 p-2"></AreaChart>
+        </div>
+        <p class="text-xs p-2 px-2 xl:px-44 ">Source : <a
+                href="https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/api/"
+                target="_blank">
+                data.culture.gouv.fr</a>
+        </p>
+        <div class="px-10 mt-10 lg:flex lg:justify-center lg:flex-col lg:px-56 xl:px-96 lg:mt-0">
+            <div class="text-sm lg:text-xl leading-normal">
+                <p class="">
                     En effet la région Auvergne - Rhône-Alpes possède 323 cinémas tandis que l'Île-de-France en dispose
                     de 310.
                 </p>
-
             </div>
         </div>
         <div class="bg-gray-700 w-4/5 my-10 h-1 rounded-full mx-auto md:my-8"></div>

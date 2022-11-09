@@ -69,10 +69,9 @@ let chartOptions = reactive({
         //axe des ordonnées 
         y: {
             //valeur max des y
-            suggestedMax: 100,
             ticks: {
                 font: {
-                    size: 16
+                    size: 10
                 }
             }
         },
@@ -80,7 +79,7 @@ let chartOptions = reactive({
         x: {
             ticks: {
                 font: {
-                    size: 10
+                    size: 8
                 }
             }
         }
@@ -105,7 +104,7 @@ let chartOptions = reactive({
             //couleur du text
             color: "black",
             font: {
-                size: 16
+                size: 10
             }
         }
     },
