@@ -107,8 +107,11 @@ const menuVisible = ref(true);
 
             <div class="text-sm lg:text-xl leading-normal mt-10 mb-5">
                 <p>
-                    Sur la période de 2020, on retrouve les régions qui ont les cinémas qui ont proposaient le plus de
+                    Sur la période de 2020, on retrouve les régions qui ont les cinémas qui ont proposé le plus de
                     séances au cours de l'année.
+                    Cela donne un ordre d'idée sur combien de séances les cinémas d'une régions peuvent organisé au
+                    total
+                    pour leur clients sur un an.
                 </p>
             </div>
         </div>
