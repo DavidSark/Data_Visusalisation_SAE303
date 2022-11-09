@@ -108,10 +108,8 @@ const menuVisible = ref(true);
             <div class="text-sm lg:text-xl leading-normal mt-10 mb-5">
                 <p>
                     Sur la période de 2020, on retrouve les régions qui ont les cinémas qui ont proposé le plus de
-                    séances au cours de l'année.
-                    Cela donne un ordre d'idée sur combien de séances les cinémas d'une régions peuvent organisé au
-                    total
-                    pour leur clients sur un an.
+                    séances au cours de l'année. Cela donne un ordre d'idées sur combien de séances les cinémas d'une
+                    région peuvent organiser au total pour leurs clients sur un an.
                 </p>
             </div>
         </div>
@@ -153,16 +151,23 @@ const menuVisible = ref(true);
             <div class="mx-3 pb-3 pt-4  lg:flex lg:justify-evenly">
                 <div class="flex flex-col lg:flex-row lg:space-x-11 lg:text-2xl">
                     <router-link class="" to="/barchart">
-                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Bar Hori</p>
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">BarChart Hori
+                        </p>
                     </router-link>
                     <router-link to="/linechart">
-                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Line</p>
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">LineChart</p>
                     </router-link>
                     <router-link class=" shrink-0" to="/verticalbarchart">
-                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Bar</p>
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">BarChart</p>
                     </router-link>
                     <router-link class="shrink-0" to="/doughnutchart">
-                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Pie</p>
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">PieChart</p>
+                    </router-link>
+                    <router-link class="shrink-0" to="/areachart">
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">AreaChart</p>
+                    </router-link>
+                    <router-link class="shrink-0" to="/graphfiltre">
+                        <p class="text-gray-700 hover:border-b inline hover:border-verde font-semibold">Graph&Filtre</p>
                     </router-link>
                     <router-link to="/map">
                         <p class="text-gray-700 hover:border-b inline-block hover:border-verde font-semibold">Map</p>
